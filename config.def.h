@@ -7,7 +7,11 @@ static const char *colorname[NUMCOLS] = {
 	[INPUT] =  "#005577",   /* during input */
 	[FAILED] = "#CC3333",   /* wrong password */
 	[CAPS] = "red",         /* CapsLock on */
+	[PAM] =    "#483d8b",   /* waiting for PAM */
 };
 
 /* treat a cleared input like a wrong password (color) */
 static const int failonclear = 1;
+
+/* PAM service that's used for authentication */
+static const char* pam_service = "login";
